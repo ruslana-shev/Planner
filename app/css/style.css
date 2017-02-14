@@ -222,26 +222,38 @@ button {
 .icon-warning:before {
   content: ""; }
 
-.fixed-to-top {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 9999; }
-
-.container {
+.conteiner {
   max-width: 1230px;
-  margin: 0  auto;
-  padding: 0 15px; }
+  padding: 0 15px;
+  margin: 0 auto; }
+
+.flex-conteiner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .flex-conteiner.direction-row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+  .flex-conteiner.space-between {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
 
 .icon {
-  display: inline-block; }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
 
 .header {
   background: #00a2f4;
   padding: 3.5em 0;
-  height: 100px;
-  position: relative; }
+  height: 100px; }
 
 .add-task {
   font-size: 1em;
@@ -250,11 +262,9 @@ button {
   background: #ffbb00;
   -webkit-border-radius: 50%;
           border-radius: 50%;
-  position: absolute;
-  top: 100%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%); }
+  -webkit-transform: translateY(55%);
+      -ms-transform: translateY(55%);
+          transform: translateY(55%); }
   .add-task span {
     display: inline-block;
     width: 3em;
@@ -273,149 +283,50 @@ button {
               transform: rotate(0deg); }
 
 .user-nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   font-size: 3em;
-  float: right;
-  color: #fff;
-  line-height: .75; }
-  .user-nav a {
-    display: inline-block; }
-    .user-nav a + a {
-      margin-left: 35px; }
-
-.toggle-task-list {
-  padding: 5em 0 3em 0;
-  font-size: 1.8em;
-  font-family: 'sf_ui_textsemibold'; }
-  @media (min-width: 768px) {
-    .toggle-task-list {
-      padding: 10em 0 6em 0; } }
-  .toggle-task-list li {
-    display: inline-block;
-    color: #bebebe; }
-    .toggle-task-list li + li:before {
-      content: '/';
-      display: inline-block;
-      color: inherit;
-      margin-right: 4px; }
-    .toggle-task-list li.active {
-      color: #00a2f4; }
-
-.tooday-day {
-  padding: 1em 9%;
-  background: #00a2f4;
   color: #fff; }
-  .tooday-day .day {
-    font-family: 'sf_ui_displaybold';
-    font-size: 3.6em; }
-  .tooday-day .month {
-    margin-left: -4px;
-    font-size: 1.8em; }
+  .user-nav li a {
+    line-height: .8; }
+  .user-nav li + li {
+    margin-left: 35px; }
 
-.all-task-wrap {
-  padding-top: 5em; }
-
-.task-content {
-  overflow-y: auto;
-  height: -webkit-calc( 100vh - 262px);
-  height: calc( 100vh - 262px); }
-
-.task {
-  width: 100%;
-  position: relative;
-  padding-left: 5.4em; }
-  @media (min-width: 768px) {
-    .task {
-      max-width: 600px;
-      padding-left: 11.2em; } }
-  .task.warning header {
-    background: #ff5201; }
-  .task.success header {
-    background: #7cbb00; }
-  .task.open .task-content-wrap {
-    display: block !important; }
-  .task.open header {
-    -webkit-border-radius: .9em .9em 0 0;
-            border-radius: .9em .9em 0 0; }
-  .task + .task {
-    margin-top: 4em; }
-  .task header {
-    padding: 1.5em;
-    background: #ffbb00;
-    -webkit-border-radius: 1em;
-            border-radius: 1em;
-    color: #fff;
-    font-family: 'sf_ui_textlight';
-    cursor: pointer;
-    -webkit-box-shadow: 0px 5px 7.36px 0.64px rgba(0, 0, 0, 0.08);
-            box-shadow: 0px 5px 7.36px 0.64px rgba(0, 0, 0, 0.08); }
-    .task header > * {
-      display: inline-block;
-      vertical-align: middle; }
-    .task header .short-task-text {
-      font-size: 1.4em;
-      width: 53%;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      overflow: hidden; }
-    .task header .remove {
-      font-size: 2em;
-      margin-top: -3px;
-      margin-left: 27%; }
-    .task header .slide-toggle-btn {
-      font-size: .6em;
-      margin-right: 4.3%; }
-  .task .task-content-wrap {
-    display: none;
-    padding: 1.5em;
-    -webkit-border-radius: 0 0 1em 1em;
-            border-radius: 0 0 1em 1em;
-    background: #fff;
-    color: #404040;
-    font-family: 'sf_ui_textlight';
-    -webkit-box-shadow: 0px 5px 16.17px 4.83px rgba(0, 2, 3, 0.08);
-            box-shadow: 0px 5px 16.17px 4.83px rgba(0, 2, 3, 0.08);
-    font-size: 1.4em;
-    line-height: 1.3;
-    overflow: hidden; }
-    .task .task-content-wrap .icon {
-      font-size: 2em;
-      line-height: .7; }
-    .task .task-content-wrap > * + * {
-      margin-top: 15px; }
-    .task .task-content-wrap > .task-edit {
-      margin-top: 30px; }
-
-.task-icon {
-  display: inline-block;
-  width: 10%; }
-
-.time-row > * {
-  display: inline-block;
-  line-height: 0.9;
-  vertical-align: middle; }
-
-.time-row .alert {
-  float: right; }
-
-.task-text-row .task-icon {
-  vertical-align: top; }
-
-.task-text-row article {
-  width: 88%;
-  display: inline-block; }
-
-.task-edit .icon {
-  float: right; }
-
-.to-do-time {
-  width: 3.3333em;
-  height: 3.3333em;
-  font-size: 1.2em;
-  background: #00a2f4;
-  color: #fff;
-  text-align: center;
-  line-height: 3.3333em;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
-  position: absolute;
-  left: 0; }
+.toggle-task-type {
+  padding: 5em 0; }
+  @media (min-width: 1024px) {
+    .toggle-task-type {
+      padding: 10em 0 8em 0; } }
+  .toggle-task-type .toggle-task-list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    .toggle-task-type .toggle-task-list li {
+      color: #bebebe;
+      font-size: 1.8em;
+      font-family: 'sf_ui_textsemibold'; }
+      @media (min-width: 1024px) {
+        .toggle-task-type .toggle-task-list li {
+          font-size: 3.8em; } }
+      .toggle-task-type .toggle-task-list li.active {
+        color: #00a2f4; }
+      .toggle-task-type .toggle-task-list li + li {
+        margin-left: 5px; }
+        .toggle-task-type .toggle-task-list li + li::before {
+          content: '/';
+          display: inline-block;
+          margin-right: 5px;
+          color: #bebebe; }
