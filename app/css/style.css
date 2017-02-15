@@ -222,6 +222,17 @@ button {
 .icon-warning:before {
   content: ""; }
 
+.icon, .user-nav, .toggle-task-type .toggle-task-list, .today-day, .task .task-header, .task .task-content-wrap .time-row, .task .task-content-wrap .task-text-row, .task .task-content-wrap .task-check-row form, .task .task-content-wrap .task-edit-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
 .conteiner {
   max-width: 1230px;
   padding: 0 15px;
@@ -243,12 +254,6 @@ button {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-
-.icon {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
 
 .header {
   background: #00a2f4;
@@ -283,15 +288,6 @@ button {
               transform: rotate(0deg); }
 
 .user-nav {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
   font-size: 3em;
   color: #fff; }
   .user-nav li a {
@@ -304,46 +300,27 @@ button {
   @media (min-width: 1024px) {
     .toggle-task-type {
       padding: 10em 0 8em 0; } }
-  .toggle-task-type .toggle-task-list {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row; }
-    .toggle-task-type .toggle-task-list li {
-      color: #bebebe;
-      font-size: 1.8em;
-      font-family: 'sf_ui_textsemibold'; }
-      @media (min-width: 1024px) {
-        .toggle-task-type .toggle-task-list li {
-          font-size: 3.8em; } }
-      .toggle-task-type .toggle-task-list li.active {
-        color: #00a2f4; }
-      .toggle-task-type .toggle-task-list li + li {
-        margin-left: 5px; }
-        .toggle-task-type .toggle-task-list li + li::before {
-          content: '/';
-          display: inline-block;
-          margin-right: 5px;
-          color: #bebebe; }
+  .toggle-task-type .toggle-task-list li {
+    color: #bebebe;
+    font-size: 1.8em;
+    font-family: 'sf_ui_textsemibold'; }
+    @media (min-width: 1024px) {
+      .toggle-task-type .toggle-task-list li {
+        font-size: 3.8em; } }
+    .toggle-task-type .toggle-task-list li.active {
+      color: #00a2f4; }
+    .toggle-task-type .toggle-task-list li + li {
+      margin-left: 5px; }
+      .toggle-task-type .toggle-task-list li + li::before {
+        content: '/';
+        display: inline-block;
+        margin-right: 5px;
+        color: #bebebe; }
 
 .today-day {
   background: #00a2f4;
   padding: 1em 2em;
   color: #fff;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-align: baseline;
   -webkit-align-items: baseline;
       -ms-flex-align: baseline;
@@ -411,15 +388,6 @@ button {
     color: #fff;
     font-family: 'sf_ui_textlight';
     cursor: pointer;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
@@ -478,15 +446,6 @@ button {
         .task .task-content-wrap .icon {
           margin-top: -10px; } }
     .task .task-content-wrap .time-row {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: row;
-          -ms-flex-direction: row;
-              flex-direction: row;
       -webkit-box-align: center;
       -webkit-align-items: center;
           -ms-flex-align: center;
@@ -507,38 +466,9 @@ button {
             -webkit-flex-basis: 85%;
                 -ms-flex-preferred-size: 85%;
                     flex-basis: 85%; } }
-    .task .task-content-wrap .task-text-row {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: row;
-          -ms-flex-direction: row;
-              flex-direction: row; }
-    .task .task-content-wrap .task-check-row form {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: row;
-          -ms-flex-direction: row;
-              flex-direction: row; }
     .task .task-content-wrap .task-check-row input[type="checkbox"] {
       display: none; }
     .task .task-content-wrap .task-edit-row {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: row;
-          -ms-flex-direction: row;
-              flex-direction: row;
       -webkit-box-pack: end;
       -webkit-justify-content: flex-end;
           -ms-flex-pack: end;

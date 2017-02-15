@@ -15,7 +15,7 @@
 	}
 }
 .icon{
-	display: flex;
+	@extend %flex-conteiner;
 }
 .header{
 	background: $generalColor;
@@ -48,8 +48,7 @@
     }
 }
 .user-nav{
-	display: flex;
-	flex-direction: row;
+	@extend %flex-conteiner;
 	font-size: 3em;
 	color: #fff;
 	li{
@@ -67,8 +66,7 @@
 		padding: 10em 0 8em 0;
 	}
 	.toggle-task-list{
-		display: flex;
-		flex-direction: row;
+		@extend %flex-conteiner;
 		li{
 			color: #bebebe;
 			font-size: 1.8em;
@@ -95,8 +93,7 @@
 	background: $generalColor;
 	padding: 1em 2em;
 	color: #fff;
-	display: flex;
-	flex-direction: row;
+	@extend %flex-conteiner;
 	align-items: baseline;
 	@media (min-width: 1024px){
 		padding: 2em 10em;
@@ -168,8 +165,7 @@
 		color: #fff;
 		font-family: 'sf_ui_textlight';
 		cursor: pointer;
-		display: flex;
-    	flex-direction: row;
+		@extend %flex-conteiner;
     	justify-content: space-between;
     	align-items: center;
 		@media (min-width: 1024px){
@@ -223,8 +219,7 @@
 			}
 		}
 		.time-row{
-			display: flex;
-    		flex-direction: row;
+			@extend %flex-conteiner;
     		align-items: center;
     		justify-content: space-between;
     		.time{
@@ -236,21 +231,18 @@
     		}
 		}
 		.task-text-row{
-			display: flex;
-			flex-direction: row;
+			@extend %flex-conteiner;
 		}
 		.task-check-row{
 			form{
-				display: flex;
-				flex-direction: row;
+				@extend %flex-conteiner;
 			}
 			input[type="checkbox"]{
 				display: none;
 			}
 		}
 		.task-edit-row{
-			display: flex;
-			flex-direction: row;
+			@extend %flex-conteiner;
 			justify-content: flex-end;
 		}
 		& > *{
