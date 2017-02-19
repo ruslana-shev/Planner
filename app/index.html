@@ -8,6 +8,7 @@
 </head>
 <body>
 	<!--Header start-->
+	<div class="fixed-to-top">
 		<div class="header">
 			<div class="conteiner">
 				<div class="flex-conteiner direction-row space-between">
@@ -16,15 +17,12 @@
 						<span></span>
 					</button>
 					<ul class="user-nav">
-						<li><a href="#"><span class="icon icon-user"></span></a></li>
+						<li><a href="login.html"><span class="icon icon-user"></span></a></li>
 						<li><a href="#"><span class="icon icon-logout"></span></a></li>
 					</ul>
 				</div>	
 			</div>
 		</div>
-	<!--Header end-->
-	<!--Main start-->
-	<div class="main">
 		<div class="toggle-task-type">
 			<div class="conteiner">
 				<ul class="toggle-task-list">
@@ -33,6 +31,11 @@
 				</ul>
 			</div>
 		</div>
+	</div>
+		
+	<!--Header end-->
+	<!--Main start-->
+	<div class="main">		
 		<div class="task-content" id="all-task">
 			<div class="conteiner">
 				<div class="today-day">
@@ -41,7 +44,8 @@
 				</div>
 				<div class="all-task-wrap">
 					<!--ONE TASK-->
-					<div class="task open">
+					<div class="task-wrap">
+						<div class="task open">
 						<div class="to-do-time">9:00</div>
 						<div class="task-header">
 							<div class="slide-toggle-btn">
@@ -61,7 +65,7 @@
 								</div>
 								<span class="time">9:00</span>
 								<div class="alert">
-									<span class="icon icon-bell"></span>
+									<span class="icon icon-bell blue-color"></span>
 								</div>
 							</div>
 							<div class="task-text-row">
@@ -72,16 +76,28 @@
 							</div>
 							<div class="task-check-row">
 								<form>
+									<div class="task-icon">
+										<span class="icon icon-check"></span>
+									</div>
 									<input type="checkbox" name="todo" id="todo">
-									<label for="todo"><span class="icon icon-check"></span>Я выполнил задачу</label>
+									<label for="todo">Я выполнил задачу</label>
 								</form>
 							</div>
 							<div class="task-edit-row">
-								<span class="icon icon-edit"></span>
+								<span class="icon icon-edit gray-color"></span>
 							</div>
 						</div>
+						</div>
+						<div class="info-block warning">
+						<div class="info-icon">
+							<span class="icon icon-warning"></span>
+							<span class="icon icon-star"></span>
+						</div>
+						<span>Вы не выполнили эту задачу</span>
+						</div>
 					</div>
-					<div class="task warning">
+					<div class="task-wrap">
+						<div class="task warning">
 						<div class="to-do-time">9:00</div>
 						<div class="task-header">
 							<div class="slide-toggle-btn">
@@ -101,7 +117,7 @@
 								</div>
 								<span class="time">9:00</span>
 								<div class="alert">
-									<span class="icon icon-bell"></span>
+									<span class="icon icon-bell blue-color"></span>
 								</div>
 							</div>
 							<div class="task-text-row">
@@ -112,16 +128,27 @@
 							</div>
 							<div class="task-check-row">
 								<form>
+									<div class="task-icon">
+										<span class="icon icon-check"></span>
+									</div>
 									<input type="checkbox" name="todo" id="todo">
-									<label for="todo"><span class="icon icon-check"></span>Я выполнил задачу</label>
+									<label for="todo">Я выполнил задачу</label>
 								</form>
 							</div>
 							<div class="task-edit-row">
-								<span class="icon icon-edit"></span>
+								<span class="icon icon-edit gray-color"></span>
 							</div>
 						</div>
+						</div>
+						<div class="info-block warning">
+						<div class="info-icon">
+							<span class="icon icon-warning"></span>
+						</div>
+						<span>Вы не выполнили эту задачу</span>
+						</div>
 					</div>
-					<div class="task success">
+					<div class="task-wrap">
+						<div class="task success">
 						<div class="to-do-time">9:00</div>
 						<div class="task-header">
 							<div class="slide-toggle-btn">
@@ -141,7 +168,7 @@
 								</div>
 								<span class="time">9:00</span>
 								<div class="alert">
-									<span class="icon icon-bell"></span>
+									<span class="icon icon-bell blue-color"></span>
 								</div>
 							</div>
 							<div class="task-text-row">
@@ -152,15 +179,25 @@
 							</div>
 							<div class="task-check-row">
 								<form>
+									<div class="task-icon">
+										<span class="icon icon-check"></span>
+									</div>
 									<input type="checkbox" name="todo" id="todo">
-									<label for="todo"><span class="icon icon-check"></span>Я выполнил задачу</label>
+									<label for="todo">Я выполнил задачу</label>
 								</form>
 							</div>
 							<div class="task-edit-row">
-								<span class="icon icon-edit"></span>
+								<span class="icon icon-edit gray-color"></span>
 							</div>
 						</div>
-					</div>
+						</div>
+						<div class="info-block warning">
+						<div class="info-icon">
+							<span class="icon icon-warning"></span>
+						</div>
+						<span>Вы не выполнили эту задачу</span>
+						</div>
+					</div>	
 				</div>
 			</div>
 		</div>
