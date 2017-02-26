@@ -429,8 +429,6 @@ button {
       @media (min-width: 1024px) {
         .task-wrap .info-block .icon {
           font-size: 4.2em; } }
-    .task-wrap .info-block .icon-star {
-      display: none; }
     .task-wrap .info-block span {
       font-size: 1.6em;
       padding-right: 20px; }
@@ -791,18 +789,7 @@ button {
   @media (min-width: 1024px) {
     .login-conteiner {
       background: url("../img/login-bg-1920px.jpg") no-repeat top center; } }
-
-.form-block {
-  min-width: 29em;
-  height: 33.2em;
-  background: #fff;
-  -webkit-border-radius: 0.6em;
-          border-radius: 0.6em;
-  margin: 0 1.5em; }
-  @media (min-width: 1024px) {
-    .form-block {
-      width: 34.4em; } }
-  .form-block .form {
+  .login-conteiner form {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -820,8 +807,15 @@ button {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    height: 100%; }
-    .form-block .form .input-group {
+    min-width: 29em;
+    background: #fff;
+    -webkit-border-radius: 0.6em;
+            border-radius: 0.6em;
+    padding: 5em 0 4.5em 0; }
+    @media (min-width: 1024px) {
+      .login-conteiner form {
+        width: 34.4em; } }
+    .login-conteiner form .input-group {
       color: #9e9e9e;
       font-size: 1.8em;
       width: 13.55em;
@@ -837,19 +831,19 @@ button {
       -webkit-box-align: center;
       -webkit-align-items: center;
           -ms-flex-align: center;
-              align-items: center; }
-      .form-block .form .input-group + .input-group {
-        margin-top: 1.111em; }
-      .form-block .form .input-group input[type="text"], .form-block .form .input-group input[type="password"] {
+              align-items: center;
+      width: 100%;
+      padding: 0.777em 1.389em 0 1.389em; }
+      .login-conteiner form .input-group input[type="text"], .login-conteiner form .input-group input[type="password"] {
         border-bottom: 1px solid #9e9e9e;
         width: 10.55em;
         padding: 10px 5px 15px 0;
         font-size: 1em;
         color: #9e9e9e; }
-        .form-block .form .input-group input[type="text"]:hover, .form-block .form .input-group input[type="password"]:hover {
+        .login-conteiner form .input-group input[type="text"]:hover, .login-conteiner form .input-group input[type="password"]:hover {
           color: #00a1f1;
           border-color: #00a1f1; }
-      .form-block .form .input-group label {
+      .login-conteiner form .input-group label {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -859,39 +853,41 @@ button {
         -webkit-align-items: center;
             -ms-flex-align: center;
                 align-items: center; }
-        .form-block .form .input-group label span {
-          width: 24px;
-          height: 24px;
+        .login-conteiner form .input-group label span {
           margin-right: 1.38em; }
-          .form-block .form .input-group label span.icon {
+          .login-conteiner form .input-group label span.icon {
             font-size: 1.333em; }
-            .form-block .form .input-group label span.icon:hover {
+            .login-conteiner form .input-group label span.icon:hover {
               color: #00a1f1; }
-      .form-block .form .input-group .form-btn {
+      .login-conteiner form .input-group .form-btn {
         height: 2.22em;
         width: 100%;
         color: #fff;
         font-size: 1em;
         font-weight: bold;
         background: #00a1f1;
-        -webkit-border-radius: 6px;
-                border-radius: 6px;
+        -webkit-border-radius: 10px;
+                border-radius: 10px;
         cursor: pointer;
-        margin: 1.111em 0 0.56em 0; }
-    .form-block .form input[type="checkbox"] {
+        margin-top: 1.44em; }
+    .login-conteiner form input[type="checkbox"] {
       display: none; }
-    .form-block .form .input-checkbox {
+    .login-conteiner form .input-checkbox {
       -webkit-box-pack: center;
       -webkit-justify-content: center;
           -ms-flex-pack: center;
               justify-content: center;
-      margin-top: 1.66em; }
-      .form-block .form .input-checkbox span.icon {
+      margin-top: 0.888em; }
+      .login-conteiner form .input-checkbox span.icon {
         margin-right: 0.625em; }
-      .form-block .form .input-checkbox span.icon-check_box {
+      .login-conteiner form .input-checkbox span.icon-check_box {
         display: none; }
-      .form-block .form .input-checkbox input[type="checkbox"]:checked + label span.icon-check_box {
+      .login-conteiner form .input-checkbox input[type="checkbox"] + label {
+        font-size: 0.778em; }
+        .login-conteiner form .input-checkbox input[type="checkbox"] + label span.icon {
+          font-size: 1.29em; }
+      .login-conteiner form .input-checkbox input[type="checkbox"]:checked + label span.icon-check_box {
         display: inline-block;
         color: #00a1f1; }
-      .form-block .form .input-checkbox input[type="checkbox"]:checked + label span.icon-check_box_outline {
+      .login-conteiner form .input-checkbox input[type="checkbox"]:checked + label span.icon-check_box_outline {
         display: none; }
