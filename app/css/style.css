@@ -425,7 +425,7 @@ button {
             -ms-flex-align: start;
                 align-items: flex-start; } }
     .task-wrap .info-block .icon {
-      font-size: 4em; }
+      font-size: 3.2em; }
       @media (min-width: 1024px) {
         .task-wrap .info-block .icon {
           font-size: 4.2em; } }
@@ -515,7 +515,6 @@ button {
     color: #404040;
     font-family: 'sf_ui_textlight';
     font-size: 1.4em;
-    line-height: 1.3;
     -webkit-box-shadow: 0px 5px 16.17px 4.83px rgba(0, 2, 3, 0.08);
             box-shadow: 0px 5px 16.17px 4.83px rgba(0, 2, 3, 0.08); }
     @media (min-width: 1024px) {
@@ -528,7 +527,10 @@ button {
         .task .task-content-wrap .task-icon {
           width: 36px; } }
     .task .task-content-wrap .icon {
-      font-size: 1.42em; }
+      font-size: 1.43em; }
+      @media (min-width: 1024px) {
+        .task .task-content-wrap .icon {
+          font-size: 1.2em; } }
     .task .task-content-wrap .time-row {
       -webkit-box-align: center;
       -webkit-align-items: center;
@@ -543,7 +545,8 @@ button {
             padding-left: 15px; } }
     .task .task-content-wrap .task-text-row p {
       width: 90%;
-      padding-left: 10px; }
+      padding-left: 10px;
+      line-height: 1.3; }
       @media (min-width: 1024px) {
         .task .task-content-wrap .task-text-row p {
           padding-left: 15px; } }
@@ -561,6 +564,18 @@ button {
           padding-left: 15px; } }
     .task .task-content-wrap .task-check-row .icon-check {
       color: #7cbb00; }
+    .task .task-content-wrap .task-check-row .icon-check-red {
+      display: inline-block;
+      background: #fff;
+      border: 1px solid red;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      width: 20px;
+      height: 20px; }
+      @media (min-width: 1024px) {
+        .task .task-content-wrap .task-check-row .icon-check-red {
+          width: 30px;
+          height: 30px; } }
     .task .task-content-wrap .task-edit-row {
       -webkit-box-pack: end;
       -webkit-justify-content: flex-end;
@@ -811,14 +826,16 @@ button {
     background: #fff;
     -webkit-border-radius: 0.6em;
             border-radius: 0.6em;
-    padding: 5em 0 4.5em 0; }
+    padding: 5em 0 4.5em 0;
+    margin: 0 1.6em 0 1.6em;
+    -webkit-box-shadow: 0px 5px 16.17px 4.83px rgba(0, 2, 3, 0.08);
+            box-shadow: 0px 5px 16.17px 4.83px rgba(0, 2, 3, 0.08); }
     @media (min-width: 1024px) {
       .login-conteiner form {
         width: 34.4em; } }
     .login-conteiner form .input-group {
       color: #9e9e9e;
       font-size: 1.8em;
-      width: 13.55em;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -834,9 +851,12 @@ button {
               align-items: center;
       width: 100%;
       padding: 0.777em 1.389em 0 1.389em; }
+      @media (min-width: 1024px) {
+        .login-conteiner form .input-group {
+          padding: 0.777em 2.77em 0 2.78em; } }
       .login-conteiner form .input-group input[type="text"], .login-conteiner form .input-group input[type="password"] {
         border-bottom: 1px solid #9e9e9e;
-        width: 10.55em;
+        width: 100%;
         padding: 10px 5px 15px 0;
         font-size: 1em;
         color: #9e9e9e; }
